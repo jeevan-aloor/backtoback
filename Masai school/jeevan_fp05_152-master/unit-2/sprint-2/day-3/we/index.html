@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 35%;
+            margin: auto;
+            text-align: center;
+        }
+        h1+p{
+            width: 35%;
+            margin: auto;
+            text-align: center;
+            margin-top: 25px;
+            color: maroon;
+
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            
+            width: 80%;
+            margin: auto;
+            margin-top: 40px;
+           
+
+        }
+        #container>div{
+            /* border: 1px solid red; */
+            text-align: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding-bottom: 20px;
+        }
+        #container>div>p+p{
+            padding: 0px 20px;
+            line-height:25Px
+            
+        }
+        button{
+            color: blue;
+            color: black;
+            border: 1px solid blue;
+            padding: 10px 20px;
+            font-size: 17px;
+            border-radius: 10px;
+        }
+
+        button:hover{
+            background-color: blue;
+            color: white;
+            border: 0;
+            padding: 10px 20px;
+            font-size: 17px;
+            border-radius: 10px;
+
+        }
+
+        #container>div>h1+p{
+            font-style: italic;
+        }
+        #container>div>h2{
+            color: brown;
+        }
+        #container>div>h1{
+            color:blue
+        }
+        #container>div>p+p{
+            color: forestgreen;
+        }
+        @media all and (min-width: 481px) and (max-width: 768px){
+            #container 
+            {
+                grid-template-columns: repeat(2,1fr);
+            }
+            h1{
+                width: 60%;
+            }
+            h1+p{
+                width: 80%;
+            }
+    
+
+        }
+        @media all and (min-width:320px) and (max-width:480px){
+            #container{
+                grid-template-columns: repeat(1,1fr);
+                width: 90%;
+            }
+            h1,h1+p{
+                width: 100%;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Choose a plan that right or your buisness</h1>
+    <p>We collect reviews from our user so you get an honest option of what experience with our website are really like!</p>
+    <div id="container">
+        <div>
+            <h2>Starter plane</h2>
+            <h1>Free</h1>
+            <p>Per month</p>
+            <p>We collect reviews from our user so you get an honest option of what experience with our website </p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h2>Buisness plan</h2>
+            <h1>$39.00</h1>
+            <p>Per month</p>
+            <p>We collect reviews from our user so you get an honest option of what experience with our website </p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h2>Preium plan</h2>
+            <h1>$59.00</h1>
+            <p>Per month</p>
+            <p>We collect reviews from our user so you get an honest option of what experience with our website </p>
+            <button>Start Now</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>

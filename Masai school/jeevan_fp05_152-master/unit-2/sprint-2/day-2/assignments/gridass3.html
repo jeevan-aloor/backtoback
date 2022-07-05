@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        #head{
+            width: 100%;
+            height: 200px;
+            
+            display: flex;
+            
+        }
+        #head>div{
+            width: 15%;
+            height: 100%;
+            
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .invest{
+            text-align: center;
+        }
+        #sub{
+            width: 200%;
+            height: 200px;
+            border-right: 2px solid red;
+            padding-top: 10px;
+        }
+        #flex{
+            display: flex;
+            
+        }
+        #board{
+            width: 100%;
+            height: 200px;
+            
+            display: flex;
+        }
+        #board>div{
+            width: 30%;
+            height: 100%;
+            
+            margin: auto;
+        }
+        #board>div>img{
+            width: 100%;
+        }
+        #main{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,auto);
+            border-radius: 20px;
+            padding-top: 30px;
+            /* border: 1px solid black; */
+            gap: 30px;
+             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+             padding-bottom: 30px;
+        }
+        #main>div{
+            width: 90%;
+            height: 400px;
+            /* border: 1px solid red; */
+            text-align: center;
+            border-radius: 30px;
+            margin: auto;
+            margin-top: 40px;
+            box-shadow:  rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            
+        }
+        #main>div>img{
+            width: 100%;
+            height: 60%;
+        }
+        #main>div>p+img{
+            width: 150px;
+            height: 60px;
+            display: flex;
+            margin-left: 60px;
+        }
+        body>h1{
+            text-align: center;
+        }
+        #flex>div+div>p{
+            color:lightcoral;
+        }
+        #flex>div>h1{
+            font-size:40px;
+        }
+        #footer{
+            width: 100%;
+            height: 250px;
+            border: 1px solid red;
+            background-color: black;
+            margin-top: 30px;
+            padding-left: 20px;  
+            color: white; 
+            display: flex;
+            justify-content: space-between;
+            padding-right: 60px;
+            
+        }
+        #footer>div{
+            display: flex;
+            /* align-items: center; */
+        }
+        
+
+
+        
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div>
+            <h2>masai</h2>
+            
+        </div>
+        <div>
+            <h4>course</h4>
+
+
+        </div>
+        <div>
+            <h3>fees & isa</h3>
+        </div>
+        <div>
+            <h3>about us</h3>
+        </div>
+        <div>
+            <h3>
+                HIRE FROM US</h3>
+        </div>
+        <div>
+            <h3>faq </h3>
+        </div>
+        <div><h3>events</h3></div>
+        <div>
+            <button style="width: 50px;height:50px">Refer & earn</button>
+            
+        </div>
+        <div>
+            <button style="width: 50px;height:50px">login</button>
+        </div>
+    </div>
+    <div>
+        <div class="invest">
+            <h1>Our Investors</h1>
+            <p>when outcome drive you the industry stands with you</p>
+        </div>
+        <div id="flex">
+            <div id="sub">
+                <h1 style="margin-top:100px;">Stalwarts of the tech industry by our side</h1>
+            </div>
+            <div>
+                <p style="padding:0px 60px 0px 100px;">t is not easy to find the right talent for engineering & data teams in the Indian technology ecosystem even at an entry-level, and it is a problem that impacts the best of the best organisations. While Masai is an outcome-driven higher education institution, we still need the industry to support an alternative education system such as ours. The time has finally come for the technology industry to come together and invest in India’s talent. Cohort-based courses, like Masai, are yielding high-quality talent with industry-level skills better than any degrees. Today, we are backed by the most seasoned Founders, CXOs and experts of the technology industry in India
+                    
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    <h1 >Board members</h1>
+    <div id="board">
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/india-q-borderless.svg" alt="">
+        </div>
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/unitus-borderless.svg" alt="">
+        </div>
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/omidyar-borderless.svg" alt="">
+        </div>
+    </div>
+    <h1>Strategic Investors</h1>
+    <div id="main">
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="">
+            <h2>Vijay Shekhar Sharma</h2>
+            <p>Founder & CEO</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="">
+            <h2>Kunal Shah</h2>
+            <p>Founder</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+            <h2>Amrish Rau</h2>
+            <p>CEO</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg" alt="">
+            <h2>Sampad Swain</h2>
+            <p>Co-Founder & CEO</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg" alt="">
+            <h2>Ankush Sachdeva</h2>
+            <p>Co-Founder & CEO</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg" alt="">
+            <h2>Bhanu Pratap Singh</h2>
+            <p>Founder & CTO</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png" alt="">
+            <h2>Farid Ahsan</h2>
+            <p>Founder & COO</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg" alt="">
+            <h2>Amit Kumar Agarwal</h2>
+            <p>Founder & CEO</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg" alt="">
+            <h2>Akhil Gupta</h2>
+            <p>Founder & CTO</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/saurbh_garg_nobroker_c0c71cc431.jpeg" alt="">
+            <h2>Saurabh Garg
+
+            </h2>
+            <p>C0-Founder & CBO</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vipin_Pathak_Care24_acd02cd173.jpg" alt="">
+            <h2>Vipin Pathak</h2>
+            <p>C0-Founder & CEO</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/care24_1164f7a2cd.png" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ramakant_Sharma_livespace_0308e3627d.jpg" alt="">
+            <h2>Ramakant Sharma</h2>
+            <p>Founder</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/livspace_f9318b2e8d.png" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Mohit_Tandon_Delhivery_b43fee16c4.jpg" alt="">
+            <h2>Mohit Tandon</h2>
+            <p>Co-Founder</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/delhivery_17e85a76ed.png" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Abhishek_Goyal_tracxn_5b2f61d87d.jpg" alt="">
+            <h2>Abhishek Goyal</h2>
+            <p>Co-Founder</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/tracxn_6d0c3de2ee.svg" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Anurag_Jain_Kredx_b6ed6a31c6.jpg" alt="">
+            <h2>Anurag Jain</h2>
+            <p>Founder & Executive Director</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/kredx_rect_204437078a.svg" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Harshvardhan_Lunia_Lendingkart_44d72a6fcd.jpg" alt="">
+            <h2>Harshvardhan Lunia
+
+            </h2>
+            <p>Co-Founder & CEO</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/lendingkart_rect_d0d30d7b53.svg" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sunil_rao_amazon_dfd2daa06d.jpeg" alt="">
+            <h2>Sunil Rao</h2>
+            <p>Country Head Strategy and Corporate..</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amazon_rect_9e0cd101b1.svg" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sharda_Balaji_Novojuris_2a206f2f88.jpg" alt="">
+            <h2>Sharda Balaji
+
+            </h2>
+            <p>Founder</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/novojuris_ad9499f5b9.svg" alt="">
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Kulin_Shah_Onsurity_0dd3a1802f.jpg" alt="">
+            <h2>Kulin Shah</h2>
+            <p>Founder</p>
+            <img   src="https://masai-website-images.s3.ap-south-1.amazonaws.com/onsurity_5500f1c3b1.png" alt="">
+        </div>
+    </div>
+    <div id="footer">
+        <div >
+            <div>
+            <img src="https://www.masaischool.com/img/footer/masai-logo.svg" alt="">
+            <!-- <div style="padding-top: 20px;">
+                <a href="https://www.masaischool.com/alumni/"> masai alumni</a>
+                
+            </div>
+            <div style="padding-top: 20px;color: white;"><a href="https://www.masaischool.com/our-investors/">our investors</a></div>
+            <div style="padding-top: 20px;">
+                <a href="https://www.masaischool.com/media/?page=1">news room</a>
+            </div>
+            <div style="padding-top: 20px;border-bottom: 1px solid red;">
+                <a href="https://www.masaischool.com/contact/">contact us</a>
+            </div>
+        </div> -->
+        <!-- <div>
+            <h6>wjhqwd</h6>
+        </div>
+            
+
+        </div>
+        
+        <p>follow us</p>
+        
+        
+        
+
+    </div> -->
+
+    
+</body>
+</html>

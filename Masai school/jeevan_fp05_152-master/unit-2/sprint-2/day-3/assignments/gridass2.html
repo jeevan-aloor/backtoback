@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #navigate{
+           width: 80%;
+           height: 80px;
+           color: black;
+           background-color: yellow;
+           
+           font-size: 30px;
+           margin: auto;
+           padding-left: 10px;
+
+
+       }
+       #grid{
+           display: flex;
+           width: 80%;
+           height: 300px;
+           margin: auto;
+           margin-top: 20px;
+            justify-content: space-between;
+
+       }
+       #grid>div{
+           width: 45%;
+           height: 100%;
+           padding-left: 10px;
+           font-size: 20px;
+
+          
+           
+       }
+       #grid>div:nth-child(1){
+           background-color: red;
+           width: 70%;
+       }
+       #grid>div:nth-child(2){
+           width: 25%;
+       }
+       #subgrid{
+           display: grid;
+           grid-template-columns: 100%;
+           grid-template-rows: repeat(3,1fr);
+           gap: 10px;
+           /* padding-top: 10px; */
+       }
+       #subgrid>div{
+           background-color: greenyellow;
+           padding-left: 10px;
+       }
+      
+
+    
+    </style>
+</head>
+<body>
+    <div id="navigate">
+        <p>Navigation</p>    
+    </div>
+    <div id="grid">
+        <div>
+            <p>LEFT BOX</p>
+        </div>
+        <div id="subgrid">
+            <div>
+                <P>RIGHT BOX 1</P>
+            </div>
+            <div>
+                <P>RIGHT BOX 2</P>
+            </div>
+            <div>
+                <P>RIGHT BOX 3</P>
+            </div>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
