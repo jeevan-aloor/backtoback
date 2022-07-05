@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        #grid {
+            display: grid;
+            grid-template-columns:repeat(3,1fr) ;
+            grid-template-rows: repeat(3,100px);
+            gap: 20px;
+            width: 70%;
+            margin: auto;
+            grid-template-areas: 
+            "a a b b"
+            "c d d d"
+            "e e e e"
+             
+           
+            
+        }
+        #grid>div{
+            /* border: 1px solid black; */
+            /* height: 200px; */
+            
+        }
+        #grid>div:nth-child(1){
+            background-color: darkgreen;
+            grid-area:a
+           
+
+        }
+        #grid>div:nth-child(2){
+            background-color:darkgreen;
+            grid-area:b
+            
+        }
+        #grid>div:nth-child(3){
+            background-color:darkgreen;
+            grid-area:c
+        }
+        #grid>div:nth-child(4){
+            background-color:darkgreen;
+            grid-area:d
+        }
+        #grid>div:nth-child(5){
+            background-color:darkgreen;
+            grid-area:e
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div><h2>A</h2></div>
+        <div><h2>B</h2></div>
+        <div><h2>C</h2></div>
+        <div><h2>D</h2></div>
+        <div><h2>E</h2></div>
+    </div>
+    
+</body>
+</html>
