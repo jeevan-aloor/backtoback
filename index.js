@@ -3,6 +3,7 @@ const {connection} =require("./db")
 const {AloorModel}=require("./model")
 var jwt = require('jsonwebtoken');
 const {checking}=require("./checking")
+require('dotenv').config()
 
 const app=express()
 
@@ -82,7 +83,7 @@ app.get("/",(req,res)=>{
 })
 
 
-app.listen(8000,async()=>{
+app.listen(process.env.port,async()=>{
     try {
         await connection
         console.log("server is connected")
